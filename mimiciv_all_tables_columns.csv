@@ -1,0 +1,343 @@
+table_schema,table_name,column_name,data_type
+mimiciv_hosp,admissions,subject_id,integer
+mimiciv_hosp,admissions,hadm_id,integer
+mimiciv_hosp,admissions,admittime,timestamp without time zone
+mimiciv_hosp,admissions,dischtime,timestamp without time zone
+mimiciv_hosp,admissions,deathtime,timestamp without time zone
+mimiciv_hosp,admissions,admission_type,character varying
+mimiciv_hosp,admissions,admit_provider_id,character varying
+mimiciv_hosp,admissions,admission_location,character varying
+mimiciv_hosp,admissions,discharge_location,character varying
+mimiciv_hosp,admissions,insurance,character varying
+mimiciv_hosp,admissions,language,character varying
+mimiciv_hosp,admissions,marital_status,character varying
+mimiciv_hosp,admissions,race,character varying
+mimiciv_hosp,admissions,edregtime,timestamp without time zone
+mimiciv_hosp,admissions,edouttime,timestamp without time zone
+mimiciv_hosp,admissions,hospital_expire_flag,smallint
+mimiciv_hosp,d_hcpcs,code,character
+mimiciv_hosp,d_hcpcs,category,smallint
+mimiciv_hosp,d_hcpcs,long_description,text
+mimiciv_hosp,d_hcpcs,short_description,character varying
+mimiciv_hosp,d_icd_diagnoses,icd_code,character
+mimiciv_hosp,d_icd_diagnoses,icd_version,smallint
+mimiciv_hosp,d_icd_diagnoses,long_title,character varying
+mimiciv_hosp,d_icd_procedures,icd_code,character
+mimiciv_hosp,d_icd_procedures,icd_version,smallint
+mimiciv_hosp,d_icd_procedures,long_title,character varying
+mimiciv_hosp,d_labitems,itemid,integer
+mimiciv_hosp,d_labitems,label,character varying
+mimiciv_hosp,d_labitems,fluid,character varying
+mimiciv_hosp,d_labitems,category,character varying
+mimiciv_hosp,diagnoses_icd,subject_id,integer
+mimiciv_hosp,diagnoses_icd,hadm_id,integer
+mimiciv_hosp,diagnoses_icd,seq_num,integer
+mimiciv_hosp,diagnoses_icd,icd_code,character
+mimiciv_hosp,diagnoses_icd,icd_version,smallint
+mimiciv_hosp,drgcodes,subject_id,integer
+mimiciv_hosp,drgcodes,hadm_id,integer
+mimiciv_hosp,drgcodes,drg_type,character varying
+mimiciv_hosp,drgcodes,drg_code,character varying
+mimiciv_hosp,drgcodes,description,character varying
+mimiciv_hosp,drgcodes,drg_severity,smallint
+mimiciv_hosp,drgcodes,drg_mortality,smallint
+mimiciv_hosp,emar,subject_id,integer
+mimiciv_hosp,emar,hadm_id,integer
+mimiciv_hosp,emar,emar_id,character varying
+mimiciv_hosp,emar,emar_seq,integer
+mimiciv_hosp,emar,poe_id,character varying
+mimiciv_hosp,emar,pharmacy_id,integer
+mimiciv_hosp,emar,enter_provider_id,character varying
+mimiciv_hosp,emar,charttime,timestamp without time zone
+mimiciv_hosp,emar,medication,text
+mimiciv_hosp,emar,event_txt,character varying
+mimiciv_hosp,emar,scheduletime,timestamp without time zone
+mimiciv_hosp,emar,storetime,timestamp without time zone
+mimiciv_hosp,emar_detail,subject_id,integer
+mimiciv_hosp,emar_detail,emar_id,character varying
+mimiciv_hosp,emar_detail,emar_seq,integer
+mimiciv_hosp,emar_detail,parent_field_ordinal,character varying
+mimiciv_hosp,emar_detail,administration_type,character varying
+mimiciv_hosp,emar_detail,pharmacy_id,integer
+mimiciv_hosp,emar_detail,barcode_type,character varying
+mimiciv_hosp,emar_detail,reason_for_no_barcode,text
+mimiciv_hosp,emar_detail,complete_dose_not_given,character varying
+mimiciv_hosp,emar_detail,dose_due,character varying
+mimiciv_hosp,emar_detail,dose_due_unit,character varying
+mimiciv_hosp,emar_detail,dose_given,character varying
+mimiciv_hosp,emar_detail,dose_given_unit,character varying
+mimiciv_hosp,emar_detail,will_remainder_of_dose_be_given,character varying
+mimiciv_hosp,emar_detail,product_amount_given,character varying
+mimiciv_hosp,emar_detail,product_unit,character varying
+mimiciv_hosp,emar_detail,product_code,character varying
+mimiciv_hosp,emar_detail,product_description,character varying
+mimiciv_hosp,emar_detail,product_description_other,character varying
+mimiciv_hosp,emar_detail,prior_infusion_rate,character varying
+mimiciv_hosp,emar_detail,infusion_rate,character varying
+mimiciv_hosp,emar_detail,infusion_rate_adjustment,character varying
+mimiciv_hosp,emar_detail,infusion_rate_adjustment_amount,character varying
+mimiciv_hosp,emar_detail,infusion_rate_unit,character varying
+mimiciv_hosp,emar_detail,route,character varying
+mimiciv_hosp,emar_detail,infusion_complete,character varying
+mimiciv_hosp,emar_detail,completion_interval,character varying
+mimiciv_hosp,emar_detail,new_iv_bag_hung,character varying
+mimiciv_hosp,emar_detail,continued_infusion_in_other_location,character varying
+mimiciv_hosp,emar_detail,restart_interval,character varying
+mimiciv_hosp,emar_detail,side,character varying
+mimiciv_hosp,emar_detail,site,character varying
+mimiciv_hosp,emar_detail,non_formulary_visual_verification,character varying
+mimiciv_hosp,hcpcsevents,subject_id,integer
+mimiciv_hosp,hcpcsevents,hadm_id,integer
+mimiciv_hosp,hcpcsevents,chartdate,date
+mimiciv_hosp,hcpcsevents,hcpcs_cd,character
+mimiciv_hosp,hcpcsevents,seq_num,integer
+mimiciv_hosp,hcpcsevents,short_description,character varying
+mimiciv_hosp,labevents,labevent_id,integer
+mimiciv_hosp,labevents,subject_id,integer
+mimiciv_hosp,labevents,hadm_id,integer
+mimiciv_hosp,labevents,specimen_id,integer
+mimiciv_hosp,labevents,itemid,integer
+mimiciv_hosp,labevents,order_provider_id,character varying
+mimiciv_hosp,labevents,charttime,timestamp without time zone
+mimiciv_hosp,labevents,storetime,timestamp without time zone
+mimiciv_hosp,labevents,value,character varying
+mimiciv_hosp,labevents,valuenum,double precision
+mimiciv_hosp,labevents,valueuom,character varying
+mimiciv_hosp,labevents,ref_range_lower,double precision
+mimiciv_hosp,labevents,ref_range_upper,double precision
+mimiciv_hosp,labevents,flag,character varying
+mimiciv_hosp,labevents,priority,character varying
+mimiciv_hosp,labevents,comments,text
+mimiciv_hosp,microbiologyevents,microevent_id,integer
+mimiciv_hosp,microbiologyevents,subject_id,integer
+mimiciv_hosp,microbiologyevents,hadm_id,integer
+mimiciv_hosp,microbiologyevents,micro_specimen_id,integer
+mimiciv_hosp,microbiologyevents,order_provider_id,character varying
+mimiciv_hosp,microbiologyevents,chartdate,timestamp without time zone
+mimiciv_hosp,microbiologyevents,charttime,timestamp without time zone
+mimiciv_hosp,microbiologyevents,spec_itemid,integer
+mimiciv_hosp,microbiologyevents,spec_type_desc,character varying
+mimiciv_hosp,microbiologyevents,test_seq,integer
+mimiciv_hosp,microbiologyevents,storedate,timestamp without time zone
+mimiciv_hosp,microbiologyevents,storetime,timestamp without time zone
+mimiciv_hosp,microbiologyevents,test_itemid,integer
+mimiciv_hosp,microbiologyevents,test_name,character varying
+mimiciv_hosp,microbiologyevents,org_itemid,integer
+mimiciv_hosp,microbiologyevents,org_name,character varying
+mimiciv_hosp,microbiologyevents,isolate_num,smallint
+mimiciv_hosp,microbiologyevents,quantity,character varying
+mimiciv_hosp,microbiologyevents,ab_itemid,integer
+mimiciv_hosp,microbiologyevents,ab_name,character varying
+mimiciv_hosp,microbiologyevents,dilution_text,character varying
+mimiciv_hosp,microbiologyevents,dilution_comparison,character varying
+mimiciv_hosp,microbiologyevents,dilution_value,double precision
+mimiciv_hosp,microbiologyevents,interpretation,character varying
+mimiciv_hosp,microbiologyevents,comments,text
+mimiciv_hosp,omr,subject_id,integer
+mimiciv_hosp,omr,chartdate,date
+mimiciv_hosp,omr,seq_num,integer
+mimiciv_hosp,omr,result_name,character varying
+mimiciv_hosp,omr,result_value,text
+mimiciv_hosp,patients,subject_id,integer
+mimiciv_hosp,patients,gender,character
+mimiciv_hosp,patients,anchor_age,smallint
+mimiciv_hosp,patients,anchor_year,smallint
+mimiciv_hosp,patients,anchor_year_group,character varying
+mimiciv_hosp,patients,dod,date
+mimiciv_hosp,pharmacy,subject_id,integer
+mimiciv_hosp,pharmacy,hadm_id,integer
+mimiciv_hosp,pharmacy,pharmacy_id,integer
+mimiciv_hosp,pharmacy,poe_id,character varying
+mimiciv_hosp,pharmacy,starttime,timestamp without time zone
+mimiciv_hosp,pharmacy,stoptime,timestamp without time zone
+mimiciv_hosp,pharmacy,medication,text
+mimiciv_hosp,pharmacy,proc_type,character varying
+mimiciv_hosp,pharmacy,status,character varying
+mimiciv_hosp,pharmacy,entertime,timestamp without time zone
+mimiciv_hosp,pharmacy,verifiedtime,timestamp without time zone
+mimiciv_hosp,pharmacy,route,character varying
+mimiciv_hosp,pharmacy,frequency,character varying
+mimiciv_hosp,pharmacy,disp_sched,character varying
+mimiciv_hosp,pharmacy,infusion_type,character varying
+mimiciv_hosp,pharmacy,sliding_scale,character varying
+mimiciv_hosp,pharmacy,lockout_interval,character varying
+mimiciv_hosp,pharmacy,basal_rate,real
+mimiciv_hosp,pharmacy,one_hr_max,character varying
+mimiciv_hosp,pharmacy,doses_per_24_hrs,real
+mimiciv_hosp,pharmacy,duration,real
+mimiciv_hosp,pharmacy,duration_interval,character varying
+mimiciv_hosp,pharmacy,expiration_value,integer
+mimiciv_hosp,pharmacy,expiration_unit,character varying
+mimiciv_hosp,pharmacy,expirationdate,timestamp without time zone
+mimiciv_hosp,pharmacy,dispensation,character varying
+mimiciv_hosp,pharmacy,fill_quantity,character varying
+mimiciv_hosp,poe,poe_id,character varying
+mimiciv_hosp,poe,poe_seq,integer
+mimiciv_hosp,poe,subject_id,integer
+mimiciv_hosp,poe,hadm_id,integer
+mimiciv_hosp,poe,ordertime,timestamp without time zone
+mimiciv_hosp,poe,order_type,character varying
+mimiciv_hosp,poe,order_subtype,character varying
+mimiciv_hosp,poe,transaction_type,character varying
+mimiciv_hosp,poe,discontinue_of_poe_id,character varying
+mimiciv_hosp,poe,discontinued_by_poe_id,character varying
+mimiciv_hosp,poe,order_provider_id,character varying
+mimiciv_hosp,poe,order_status,character varying
+mimiciv_hosp,poe_detail,poe_id,character varying
+mimiciv_hosp,poe_detail,poe_seq,integer
+mimiciv_hosp,poe_detail,subject_id,integer
+mimiciv_hosp,poe_detail,field_name,character varying
+mimiciv_hosp,poe_detail,field_value,text
+mimiciv_hosp,prescriptions,subject_id,integer
+mimiciv_hosp,prescriptions,hadm_id,integer
+mimiciv_hosp,prescriptions,pharmacy_id,integer
+mimiciv_hosp,prescriptions,poe_id,character varying
+mimiciv_hosp,prescriptions,poe_seq,integer
+mimiciv_hosp,prescriptions,order_provider_id,character varying
+mimiciv_hosp,prescriptions,starttime,timestamp without time zone
+mimiciv_hosp,prescriptions,stoptime,timestamp without time zone
+mimiciv_hosp,prescriptions,drug_type,character varying
+mimiciv_hosp,prescriptions,drug,character varying
+mimiciv_hosp,prescriptions,formulary_drug_cd,character varying
+mimiciv_hosp,prescriptions,gsn,character varying
+mimiciv_hosp,prescriptions,ndc,character varying
+mimiciv_hosp,prescriptions,prod_strength,character varying
+mimiciv_hosp,prescriptions,form_rx,character varying
+mimiciv_hosp,prescriptions,dose_val_rx,character varying
+mimiciv_hosp,prescriptions,dose_unit_rx,character varying
+mimiciv_hosp,prescriptions,form_val_disp,character varying
+mimiciv_hosp,prescriptions,form_unit_disp,character varying
+mimiciv_hosp,prescriptions,doses_per_24_hrs,real
+mimiciv_hosp,prescriptions,route,character varying
+mimiciv_hosp,procedures_icd,subject_id,integer
+mimiciv_hosp,procedures_icd,hadm_id,integer
+mimiciv_hosp,procedures_icd,seq_num,integer
+mimiciv_hosp,procedures_icd,chartdate,date
+mimiciv_hosp,procedures_icd,icd_code,character varying
+mimiciv_hosp,procedures_icd,icd_version,smallint
+mimiciv_hosp,provider,provider_id,character varying
+mimiciv_hosp,services,subject_id,integer
+mimiciv_hosp,services,hadm_id,integer
+mimiciv_hosp,services,transfertime,timestamp without time zone
+mimiciv_hosp,services,prev_service,character varying
+mimiciv_hosp,services,curr_service,character varying
+mimiciv_hosp,transfers,subject_id,integer
+mimiciv_hosp,transfers,hadm_id,integer
+mimiciv_hosp,transfers,transfer_id,integer
+mimiciv_hosp,transfers,eventtype,character varying
+mimiciv_hosp,transfers,careunit,character varying
+mimiciv_hosp,transfers,intime,timestamp without time zone
+mimiciv_hosp,transfers,outtime,timestamp without time zone
+mimiciv_icu,caregiver,caregiver_id,integer
+mimiciv_icu,chartevents,subject_id,integer
+mimiciv_icu,chartevents,hadm_id,integer
+mimiciv_icu,chartevents,stay_id,integer
+mimiciv_icu,chartevents,caregiver_id,integer
+mimiciv_icu,chartevents,charttime,timestamp without time zone
+mimiciv_icu,chartevents,storetime,timestamp without time zone
+mimiciv_icu,chartevents,itemid,integer
+mimiciv_icu,chartevents,value,character varying
+mimiciv_icu,chartevents,valuenum,double precision
+mimiciv_icu,chartevents,valueuom,character varying
+mimiciv_icu,chartevents,warning,smallint
+mimiciv_icu,d_items,itemid,integer
+mimiciv_icu,d_items,label,character varying
+mimiciv_icu,d_items,abbreviation,character varying
+mimiciv_icu,d_items,linksto,character varying
+mimiciv_icu,d_items,category,character varying
+mimiciv_icu,d_items,unitname,character varying
+mimiciv_icu,d_items,param_type,character varying
+mimiciv_icu,d_items,lownormalvalue,double precision
+mimiciv_icu,d_items,highnormalvalue,double precision
+mimiciv_icu,datetimeevents,subject_id,integer
+mimiciv_icu,datetimeevents,hadm_id,integer
+mimiciv_icu,datetimeevents,stay_id,integer
+mimiciv_icu,datetimeevents,caregiver_id,integer
+mimiciv_icu,datetimeevents,charttime,timestamp without time zone
+mimiciv_icu,datetimeevents,storetime,timestamp without time zone
+mimiciv_icu,datetimeevents,itemid,integer
+mimiciv_icu,datetimeevents,value,timestamp without time zone
+mimiciv_icu,datetimeevents,valueuom,character varying
+mimiciv_icu,datetimeevents,warning,smallint
+mimiciv_icu,icustays,subject_id,integer
+mimiciv_icu,icustays,hadm_id,integer
+mimiciv_icu,icustays,stay_id,integer
+mimiciv_icu,icustays,first_careunit,character varying
+mimiciv_icu,icustays,last_careunit,character varying
+mimiciv_icu,icustays,intime,timestamp without time zone
+mimiciv_icu,icustays,outtime,timestamp without time zone
+mimiciv_icu,icustays,los,double precision
+mimiciv_icu,ingredientevents,subject_id,integer
+mimiciv_icu,ingredientevents,hadm_id,integer
+mimiciv_icu,ingredientevents,stay_id,integer
+mimiciv_icu,ingredientevents,caregiver_id,integer
+mimiciv_icu,ingredientevents,starttime,timestamp without time zone
+mimiciv_icu,ingredientevents,endtime,timestamp without time zone
+mimiciv_icu,ingredientevents,storetime,timestamp without time zone
+mimiciv_icu,ingredientevents,itemid,integer
+mimiciv_icu,ingredientevents,amount,double precision
+mimiciv_icu,ingredientevents,amountuom,character varying
+mimiciv_icu,ingredientevents,rate,double precision
+mimiciv_icu,ingredientevents,rateuom,character varying
+mimiciv_icu,ingredientevents,orderid,integer
+mimiciv_icu,ingredientevents,linkorderid,integer
+mimiciv_icu,ingredientevents,statusdescription,character varying
+mimiciv_icu,ingredientevents,originalamount,double precision
+mimiciv_icu,ingredientevents,originalrate,double precision
+mimiciv_icu,inputevents,subject_id,integer
+mimiciv_icu,inputevents,hadm_id,integer
+mimiciv_icu,inputevents,stay_id,integer
+mimiciv_icu,inputevents,caregiver_id,integer
+mimiciv_icu,inputevents,starttime,timestamp without time zone
+mimiciv_icu,inputevents,endtime,timestamp without time zone
+mimiciv_icu,inputevents,storetime,timestamp without time zone
+mimiciv_icu,inputevents,itemid,integer
+mimiciv_icu,inputevents,amount,double precision
+mimiciv_icu,inputevents,amountuom,character varying
+mimiciv_icu,inputevents,rate,double precision
+mimiciv_icu,inputevents,rateuom,character varying
+mimiciv_icu,inputevents,orderid,integer
+mimiciv_icu,inputevents,linkorderid,integer
+mimiciv_icu,inputevents,ordercategoryname,character varying
+mimiciv_icu,inputevents,secondaryordercategoryname,character varying
+mimiciv_icu,inputevents,ordercomponenttypedescription,character varying
+mimiciv_icu,inputevents,ordercategorydescription,character varying
+mimiciv_icu,inputevents,patientweight,double precision
+mimiciv_icu,inputevents,totalamount,double precision
+mimiciv_icu,inputevents,totalamountuom,character varying
+mimiciv_icu,inputevents,isopenbag,smallint
+mimiciv_icu,inputevents,continueinnextdept,smallint
+mimiciv_icu,inputevents,statusdescription,character varying
+mimiciv_icu,inputevents,originalamount,double precision
+mimiciv_icu,inputevents,originalrate,double precision
+mimiciv_icu,outputevents,subject_id,integer
+mimiciv_icu,outputevents,hadm_id,integer
+mimiciv_icu,outputevents,stay_id,integer
+mimiciv_icu,outputevents,caregiver_id,integer
+mimiciv_icu,outputevents,charttime,timestamp without time zone
+mimiciv_icu,outputevents,storetime,timestamp without time zone
+mimiciv_icu,outputevents,itemid,integer
+mimiciv_icu,outputevents,value,double precision
+mimiciv_icu,outputevents,valueuom,character varying
+mimiciv_icu,procedureevents,subject_id,integer
+mimiciv_icu,procedureevents,hadm_id,integer
+mimiciv_icu,procedureevents,stay_id,integer
+mimiciv_icu,procedureevents,caregiver_id,integer
+mimiciv_icu,procedureevents,starttime,timestamp without time zone
+mimiciv_icu,procedureevents,endtime,timestamp without time zone
+mimiciv_icu,procedureevents,storetime,timestamp without time zone
+mimiciv_icu,procedureevents,itemid,integer
+mimiciv_icu,procedureevents,value,double precision
+mimiciv_icu,procedureevents,valueuom,character varying
+mimiciv_icu,procedureevents,location,character varying
+mimiciv_icu,procedureevents,locationcategory,character varying
+mimiciv_icu,procedureevents,orderid,integer
+mimiciv_icu,procedureevents,linkorderid,integer
+mimiciv_icu,procedureevents,ordercategoryname,character varying
+mimiciv_icu,procedureevents,ordercategorydescription,character varying
+mimiciv_icu,procedureevents,patientweight,double precision
+mimiciv_icu,procedureevents,isopenbag,smallint
+mimiciv_icu,procedureevents,continueinnextdept,smallint
+mimiciv_icu,procedureevents,statusdescription,character varying
+mimiciv_icu,procedureevents,originalamount,double precision
+mimiciv_icu,procedureevents,originalrate,double precision
