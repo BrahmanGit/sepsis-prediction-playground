@@ -1,0 +1,2 @@
+# ensure all SQL files are forced to UTF-8 
+*.sql text working-tree-encoding=UTF-8 
